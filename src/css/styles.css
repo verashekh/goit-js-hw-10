@@ -16,3 +16,214 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Timer */
+.input-timer {
+  padding: 8px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 8px;
+  width: 272px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+.input-timer:hover {
+  border: 1px solid #000;
+}
+.input-timer:active {
+  border: 1px solid #4e75ff;
+  color: #000;
+  outline: none;
+}
+.input-timer:disabled {
+  border: 1px solid #808080;
+  color: #808080;
+}
+
+.button-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  padding: 8px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  background: #4e75ff;
+}
+.button-timer:hover {
+  color: #fff;
+  background: #6c8cff;
+}
+.button-timer:disabled {
+  background: #cfcfcf;
+  color: #989898;
+}
+.textandbutton {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 8px;
+  width: 355px;
+}
+.value {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.label-timer {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  text-transform: uppercase;
+}
+.timer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 24px;
+  width: 346px;
+}
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0px;
+  min-width: 55px;
+}
+/* Snackerbar */
+.form {
+  gap: 12px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 360px;
+}
+.label-snackerbar {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.wrapper-snackerbar {
+  width: 360px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  display: flex;
+  align-items: center;
+}
+.wrapper-snackerbar:hover {
+  border-color: #000;
+}
+.wrapper-snackerbar:focus-within {
+  border-color: #4e75ff;
+}
+.input-snackerbar {
+  border: none;
+  outline: none;
+  font: inherit;
+  padding: 0;
+  width: 100%;
+}
+
+legend {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 0 8px;
+}
+fieldset {
+  width: 360px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 16px;
+  text-align: left;
+}
+fieldset:hover {
+  border-color: #000;
+}
+fieldset:focus-within {
+  border-color: #000;
+}
+
+.frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 48px;
+  width: 264px;
+  margin: 0 auto;
+}
+
+.button-snackerbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  background: #4e75ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+}
+.button-snackerbar:hover {
+  background: #6c8cff;
+}
+input[type='radio'] {
+  transform: scale(1.3);
+  accent-color: #4e75ff;
+}

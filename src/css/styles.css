@@ -130,7 +130,7 @@ body {
   gap: 0px;
   min-width: 55px;
 }
-/* Snackerbar */
+/* Snackbar */
 .form {
   gap: 12px;
   display: flex;
@@ -139,7 +139,7 @@ body {
   flex-direction: column;
   width: 360px;
 }
-.label-snackerbar {
+.label-snackbar {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -147,7 +147,7 @@ body {
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
-.wrapper-snackerbar {
+.wrapper-snackbar {
   width: 360px;
   padding: 8px 16px;
   border-radius: 4px;
@@ -155,13 +155,13 @@ body {
   display: flex;
   align-items: center;
 }
-.wrapper-snackerbar:hover {
+.wrapper-snackbar:hover {
   border-color: #000;
 }
-.wrapper-snackerbar:focus-within {
+.wrapper-snackbar:focus-within {
   border-color: #4e75ff;
 }
-.input-snackerbar {
+.input-snackbar {
   border: none;
   outline: none;
   font: inherit;
@@ -202,7 +202,7 @@ fieldset:focus-within {
   margin: 0 auto;
 }
 
-.button-snackerbar {
+.button-snackbar {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,7 +220,7 @@ fieldset:focus-within {
   color: #fff;
   border: none;
 }
-.button-snackerbar:hover {
+.button-snackbar:hover {
   background: #6c8cff;
 }
 input[type='radio'] {

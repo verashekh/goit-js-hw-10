@@ -24,6 +24,7 @@ form.addEventListener('submit', event => {
     });
     return;
   }
+
   if (state !== 'fulfilled' && state !== 'rejected') {
     iziToast.error({
       ...toastOpts,
@@ -32,6 +33,7 @@ form.addEventListener('submit', event => {
     });
     return;
   }
+  form.reset();
 
   const submitBtn = form.querySelector('[type="submit"]');
   if (submitBtn) submitBtn.disabled = true;
@@ -44,6 +46,7 @@ form.addEventListener('submit', event => {
 
   promise
     .then(d => {
+      console.log(`✅ Fulfilled promise in ${d}ms`);
       iziToast.success({
         ...toastOpts,
         title: 'Готово',
@@ -51,6 +54,7 @@ form.addEventListener('submit', event => {
       });
     })
     .catch(d => {
+      console.log(`❌ Rejected promise in ${d}ms`);
       iziToast.error({
         ...toastOpts,
         title: 'Відхилено',
@@ -58,7 +62,6 @@ form.addEventListener('submit', event => {
       });
     })
     .finally(() => {
-      form.reset();
       if (submitBtn) submitBtn.disabled = false;
     });
 });
